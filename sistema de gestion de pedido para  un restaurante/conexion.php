@@ -3,11 +3,12 @@ class Conexion{
     //SE DECLARA
     private $host = "localhost";
     private $user = "root";
-    private $password = "1004266831";
+    private $password = "";
     private $db = "restaurante";
     private $conect;
     //SE CONSTRUYE
     public function __construct(){
+        //conexion es igual a esto
         $conexion= "mysql:host=".$this->host.";dbname=".$this->db.";charset=utf8";
         try {
             //SE USA CONEXION PARA RECIBIR EN CONNECT
